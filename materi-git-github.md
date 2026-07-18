@@ -30,7 +30,7 @@ Terminal adalah **aplikasi** di komputer kamu — sama seperti Microsoft Word at
 
 Tampilannya biasanya kotak hitam (atau putih, tergantung pengaturan) yang isinya cuma tulisan, tanpa tombol, tanpa menu, tanpa gambar.
 
-`[GAMBAR: tampilan jendela Terminal kosong yang baru dibuka, dengan panah menunjuk ke titik kedip (cursor) tempat mengetik]`
+![GAMBAR](images/windows-command-prompt.png)
 
 Jangan takut — ini bukan "hacker mode" yang berbahaya. Ini cuma cara lain buat ngasih perintah ke komputer, selain klik mouse.
 
@@ -41,7 +41,7 @@ Jangan takut — ini bukan "hacker mode" yang berbahaya. Ini cuma cara lain buat
 2. Ketik `Command Prompt` atau `cmd`
 3. Klik hasil pencarian yang muncul
 
-`[GAMBAR: Start Menu Windows dengan kotak pencarian terisi "cmd", hasil pencarian "Command Prompt" disorot]`
+![GAMBAR](images/open-windows-cmd.png)
 
 **Kalau kamu pakai Mac:**
 1. Klik ikon kaca pembesar (Spotlight Search) di pojok kanan atas layar, atau tekan tombol `Command` + `Spasi` bersamaan
@@ -59,7 +59,7 @@ Setelah terbuka, akan muncul jendela dengan tulisan-tulisan dan sebuah titik ked
 3. Setelah selesai mengetik satu perintah, **tekan tombol `Enter`** untuk menjalankannya. Ini beda dari mengetik di Word — di Terminal, perintah baru "jalan" setelah kamu tekan `Enter`.
 4. Terminal akan menampilkan hasilnya di bawah perintah yang kamu ketik tadi.
 
-`[GAMBAR: contoh ketik "git --version" di Terminal, lalu hasil setelah Enter ditekan, dengan anotasi panah "1. ketik di sini" dan "2. tekan Enter"]`
+![GAMBAR:](images/git-version-check.png)
 
 ### 0.4 "Kalau Aku Ketik Salah Gimana?"
 
@@ -126,9 +126,9 @@ Sebelum masuk ke teknis, penting paham dulu **masalah apa** yang diselesaikan Gi
 2. Website akan otomatis mendeteksi sistem operasi kamu (Windows/Mac/Linux), kalo semisal tidak mendeteksi pilih sesuai sistem operasi yang kamu gunakan — klik tombol download yang muncul
 3. Buka file yang sudah terdownload (biasanya ada di folder **Downloads**), lalu install seperti install aplikasi biasa: klik **Next** terus sampai muncul tombol **Install**, lalu **Finish**. Opsi-opsi yang muncul selama instalasi boleh dibiarkan default (tidak perlu diubah-ubah).
 
-`[GAMBAR: halaman git-scm.com/downloads dengan tombol download disorot]`
+![GAMBAR](images/git-download-webpage.png)
 
-`[GAMBAR: jendela installer Git di langkah pertama, dengan tombol "Next" disorot]`
+![GAMBAR:](images/install-git.png)
 
 ### 3.2 Cek Apakah Git Berhasil Terinstall
 
@@ -140,7 +140,7 @@ git --version
 
 Tekan `Enter`. Kalau berhasil, akan muncul tulisan seperti `git version 2.43.0` (angkanya boleh beda, yang penting muncul tulisan versi, bukan pesan error).
 
-`[GAMBAR: Terminal menampilkan hasil "git --version" yang berhasil, dengan kotak merah di sekitar tulisan versi Git]`
+![GAMBAR:](images/git-version-check.png)
 
 **Kalau muncul pesan error**
 
@@ -153,7 +153,7 @@ Tekan `Enter`. Kalau berhasil, akan muncul tulisan seperti `git version 2.43.0` 
 3. Isi email, buat password, pilih username
 4. Ikuti instruksi verifikasi yang dikirim ke email kamu
 
-`[GAMBAR: halaman github.com dengan tombol "Sign up" disorot]`
+![GAMBAR](images/signup-github.png)
 
 ### 3.4 Konfigurasi Identitas Git
 
@@ -177,7 +177,7 @@ Ganti `"Nama Kamu"` dengan nama kamu, dan email dengan email yang sama dengan ak
 git config --list
 ```
 
-`[GAMBAR: hasil "git config --list" menampilkan highlight dari user.name dan user.email yang sudah terisi]`
+![GAMBAR](images/git-config.png)
 
 ---
 
@@ -244,7 +244,7 @@ cd nama-project
 
 Penjelasan: `mkdir` (singkatan dari *make directory*) artinya "buat folder baru". `cd` (singkatan dari *change directory*) artinya "masuk/pindah ke folder tersebut" — ini setara dengan kamu klik dua kali sebuah folder di File Explorer, tapi lewat ketikan.
 
-`[GAMBAR: Terminal setelah mengetik "mkdir nama-project" dan "cd nama-project", menunjukkan nama folder di baris Terminal berubah menandakan sudah "masuk" ke folder itu]`
+![GAMBAR](images/terminal-make-directory.png)
 
 **Langkah 2:** Jadikan folder ini sebagai repository Git:
 
@@ -258,13 +258,13 @@ Perintah ini membuat folder tersembunyi bernama `.git` di dalam project kamu —
 1. Login ke [github.com](https://github.com)
 2. Klik tombol hijau **New** atau tanda **+** di pojok kanan atas → **New repository**
 
-`[GAMBAR: halaman utama github menampilkan dimana tombol untuk membuat repository baru]`
+![GAMBAR](images/github-homepage.png)
 
 3. Untuk sekarang cukup isi nama repository (samakan dengan nama folder kamu biar tidak bingung)
 4. **Jangan** centang opsi "Add a README file", "Add .gitignore", atau "Choose a license" atau biarkan default karena kita memulainya dari folder lokal yang sudah ada.
 5. Klik **Create repository**
 
-`[GAMBAR: halaman "Create a new repository" di GitHub dengan kolom nama repo dan tombol "Create repository" disorot]`
+![GAMBAR](images/github-create-repo.png)
 
 **Langkah 4:** Setelah dibuat, GitHub akan menampilkan sebuah alamat URL (contoh: `https://github.com/username/nama-project.git`). Salin URL itu, lalu di Terminal ketik:
 
@@ -284,7 +284,7 @@ Cek apakah sudah terhubung dengan benar:
 git remote -v
 ```
 
-`[GAMBAR: Terminal yang menampilkan hasil dari perintah "git remote add" dan "git remote -v"]`
+![GAMBAR](images/git-remote.png)
 
 ### 5.2 Skenario B — Melanjutkan Project yang Sudah Ada di GitHub
 
@@ -297,7 +297,7 @@ Kalau repo sudah ada di GitHub (misal punya organisasi Komandro) dan kamu mau mu
 git clone [tempel URL yang kamu salin]
 ```
 
-`[GAMBAR: tombol hijau "Code" di halaman GitHub yang sudah diklik, menampilkan kotak URL untuk disalin]`
+![GAMBAR](images/git-clone.png)
 
 Perintah ini otomatis: download semua file + riwayat + langsung terhubung ke remote `origin`. Ini jauh lebih simpel daripada Skenario A.
 
@@ -326,7 +326,7 @@ git status
 
 Ini akan menampilkan file mana yang berubah sejak commit terakhir. Jika kamu belum menambahkan atau mengubah apapun di dalam folder yang udah kita buat tadi seharusnya tampilannya akan kosong.
 
-`[GAMBAR: Terminal menampilkan hasil git status tanpa perubahan]`
+![GAMBAR](images/git-status-no-file.png)
 
 Nah sekarang coba buat 1 file txt, di [**Terminal**](#0-sebelum-mulai-kenalan-dulu-sama-terminal) ketik:
 
@@ -336,7 +336,7 @@ echo "Halo Dunia" > readme.md
 
 Setelah itu coba ketik `git status` lagi, seharusnya sekarang ada file bernama `readme.md` yang telah kita buat tadi.
 
-`[GAMBAR: hasil "git status" menunjukkan file yang berubah berwarna merah (belum di-add)]`
+![GAMBAR](images/git-status-with-file.png)
 
 ### Langkah 2: `git add` — Menandai File Siap Disimpan
 
@@ -347,7 +347,7 @@ git add .                    # tambah SEMUA file yang berubah (titik artinya "se
 
 Setelah `git add`, jalankan `git status` lagi — file yang tadi merah akan berubah jadi hijau, menandakan sudah masuk Staging Area.
 
-`[GAMBAR: hasil "git status" setelah git add, file berubah warna jadi hijau]`
+![GAMBAR](images/git-status-with-file-after-add.png)
 
 ### Langkah 3: `git commit` — Menyimpan Perubahan
 
@@ -381,7 +381,7 @@ git push -u origin main
 
 Setelah ini, kamu bisa cek hasilnya dengan membuka halaman repo kamu di GitHub lewat browser — file yang kamu push akan muncul di sana.
 
-`[GAMBAR: halaman repo GitHub menampilkan file yang baru saja di-push, dengan commit message terakhir terlihat]`
+![GAMBAR](images/first-commit-github.png)
 
 ### Langkah 5 (kalau kerja tim): `git pull`
 
@@ -420,7 +420,7 @@ git branch
 
 Kalau kamu belum pernah bikin branch lain, hasilnya cuma akan menampilkan `main` (ditandai tanda bintang `*` di depannya, artinya itu branch yang lagi aktif/kamu tempati sekarang).
 
-`[GAMBAR: hasil "git branch" menampilkan daftar branch, branch aktif ditandai bintang/warna berbeda]`
+![GAMBAR](images/git-branch.png)
 
 **Membuat branch baru sekaligus pindah ke situ** (paling sering dipakai):
 
@@ -436,7 +436,7 @@ git switch -c translate-inggris
 
 Setelah Enter, akan muncul pesan seperti `Switched to a new branch 'translate-inggris'`. Ini tandanya kamu sekarang "berada" di cabang baru itu — semua perubahan yang kamu buat setelah ini **tidak akan menyentuh `main`** sampai kamu gabungin manual nanti.
 
-`[GAMBAR: Terminal menampilkan pesan "Switched to a new branch 'translate-inggris'" setelah menjalankan git switch -c]`
+![GAMBAR](images/git-add-branch.png)
 
 **Pindah balik ke branch lain yang sudah ada:**
 
@@ -473,7 +473,7 @@ git push -u origin translate-inggris
 
 Setelah langkah 4, coba buka repo kamu di GitHub lewat browser — akan ada dropdown/pilihan branch di halaman repo, dan branch `translate-inggris` akan muncul di situ sebagai pilihan baru, terpisah dari `main`.
 
-`[GAMBAR: halaman GitHub menunjukkan dropdown pilihan branch, dengan "translate-inggris" muncul sebagai opsi baru di samping "main"]`
+![GAMBAR](images/select-branch-via-github.png)
 
 **Poin yang sering bikin bingung pemula:** push ke branch `translate-inggris` **tidak** mengubah isi `main` sama sekali. Kalau kamu buka branch `main` di GitHub, isinya masih sama seperti sebelumnya. Fitur translate inggris baru akan masuk ke `main` setelah proses Pull Request selesai (lihat Bagian 8).
 
@@ -507,26 +507,26 @@ Pull Request adalah cara **resmi minta izin & review** sebelum digabungkan. Isti
 
 **Langkah 2:** Buka repo kamu di GitHub lewat browser. Biasanya akan muncul kotak kuning bertuliskan **"translate-inggris had recent pushes"** dengan tombol hijau **"Compare & pull request"** — klik tombol itu.
 
-`[GAMBAR: banner kuning "Compare & pull request" di halaman GitHub dengan tombol hijau disorot]`
+![GAMBAR](images/compare-pull-req-github.png)
 
 Kalau banner itu tidak muncul (kadang hilang setelah beberapa saat), caranya manual:
 1. Klik tab **Pull requests** di bagian atas halaman repo
 2. Klik tombol hijau **New pull request**
 3. Di bagian **compare**, pilih branch kamu (`translate-inggris`)
 
-`[GAMBAR: tab "Pull requests" di halaman repo GitHub, dengan tombol "New pull request" disorot]`
+![GAMBAR](images/new-pull-req-github.png)
 
 **Langkah 3:** Pastikan pengaturan branch-nya benar:
 - **base:** `main` (branch tujuan, tempat perubahan akan masuk)
 - **compare:** `translate-inggris` (branch kamu, isi perubahannya)
 
-`[GAMBAR: halaman pembuatan PR menunjukkan dropdown "base: main" dan "compare: translate-inggris"]`
+![GAMBAR](images/manage-branch-pull-req.png)
 
 **Langkah 4:** Isi kolom judul (ringkas, misal: "Tambah fitur translate inggris") dan kolom deskripsi (jelasin apa yang diubah dan kenapa — boleh beberapa kalimat aja).
 
 **Langkah 5:** Klik tombol hijau **Create pull request**.
 
-`[GAMBAR: halaman form pembuatan pull request dengan kolom judul dan deskripsi terisi, tombol "Create pull request" disorot]`
+![GAMBAR](images/fill-title-desc-github-pull-req.png)
 
 Setelah ini, PR kamu akan muncul di tab **Pull requests**, siap direview.
 
@@ -534,7 +534,7 @@ Setelah ini, PR kamu akan muncul di tab **Pull requests**, siap direview.
 
 Reviewer (teman satu tim atau mentor) akan membuka PR kamu, melihat baris-baris kode yang berubah (ditandai warna hijau untuk yang ditambah, merah untuk yang dihapus), dan bisa memberi komentar langsung di baris tertentu.
 
-`[GAMBAR: tampilan halaman PR di GitHub menunjukkan kode yang berubah dengan warna hijau/merah, dan contoh komentar reviewer di salah satu baris]`
+![GAMBAR](images/review-code-pull-req.png)
 
 Kalau reviewer minta revisi, kamu tinggal edit file di komputer kamu lagi (masih di branch yang sama, `translate-inggris`), lalu:
 
@@ -550,7 +550,7 @@ PR yang sudah dibuat **akan otomatis ter-update** dengan commit baru ini — kam
 
 Setelah reviewer klik **Approve**, akan muncul tombol hijau **Merge pull request** di halaman PR. Klik tombol itu, lalu klik **Confirm merge**.
 
-`[GAMBAR: tombol hijau "Merge pull request" dan "Confirm merge" di halaman PR GitHub]`
+![GAMBAR](images/confirm-merge-req.png)
 
 Setelah merge berhasil, fitur translate inggris kamu **resmi masuk ke `main`**. Biasanya GitHub akan menawarkan tombol **Delete branch** — boleh diklik untuk beres-beres, karena branch `translate-inggris` sudah tidak diperlukan lagi setelah masuk ke `main`.
 
@@ -583,7 +583,7 @@ CONFLICT (content): Merge conflict in readme.md
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 
-`[GAMBAR: Terminal menampilkan pesan CONFLICT setelah git pull, berwarna merah/highlight]`
+![GAMBAR](images/terminal-error-conflict-merge.png)
 
 Buka file yang disebut di pesan error itu (`readme.md`) pakai text editor (Notepad, VS Code, atau apapun), kamu akan lihat Git otomatis menambahkan penanda seperti ini di dalam file:
 
@@ -595,7 +595,7 @@ Welcome to Komandro
 >>>>>>> translate-inggris
 ```
 
-`[GAMBAR: file readme.md dibuka di text editor, menampilkan penanda konflik <<<<<<< ======= >>>>>>> dengan highlight warna berbeda per bagian]`
+![GAMBAR](images/conflict-merge.png)
 
 Cara baca penanda ini:
 - Baris di antara `<<<<<<< HEAD` dan `=======` → versi kamu (yang lagi aktif di branch kamu sekarang)
@@ -623,7 +623,7 @@ git commit -m "fix: selesaikan konflik merge di readme.md"
 git push
 ```
 
-`[GAMBAR: Terminal menampilkan git status setelah file konflik diperbaiki, file berubah dari status "both modified" menjadi siap di-commit]`
+![GAMBAR](images/merge-conflict-solved.png)
 
 Selesai — konflik teratasi, dan kedua perubahan (dengan keputusan kamu) sudah masuk ke riwayat.
 
