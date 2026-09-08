@@ -174,7 +174,8 @@ Ganti `"Nama Kamu"` dengan nama kamu, dan email dengan email yang sama dengan ak
 **Cek konfigurasi yang sudah diset:**
 
 ```bash
-git config --list
+git config user.name
+git config user.email
 ```
 
 ![GAMBAR](images/git-config.png)
